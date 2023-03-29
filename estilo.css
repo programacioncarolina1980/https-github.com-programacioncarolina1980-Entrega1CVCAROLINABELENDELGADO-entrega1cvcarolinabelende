@@ -1,0 +1,320 @@
+/*Importo las fuentes de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,200;1,400;1,600;1,700&family=Yellowtail&display=swap');
+*{
+ font-family: "Titillium Web";
+  margin: 0;
+  padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*SECCION INICIO*/
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0.3)),
+    url("img/fondo.jpeg");
+    background-size: cover;
+    background-position:center center;
+    color: #9b0606;
+}
+.inicio .contenido-seccion{ 
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    padding: 0 px;
+
+}
+.inicio .contenido-seccion .header{
+    padding: 30px;
+}
+/*menu lateral*/
+.inicio .contenido-seccion .header nav{
+    position: relative;
+    margin-left: 20px;
+    background-color: #940253;
+    padding: 1px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion .header nav a{
+    display: block;
+    color: #940253;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.inicio .contenido-seccion .header h1{
+    border-block: 4px dotted rgb(147, 147, 148);
+}
+
+/* ***** */
+.inicio .contenido-seccion header.logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family:"Yellowtail";
+    text-shadow: 0 0 35px hwb(120 7% 17%);
+
+}
+/* logo CON COLOR*/
+.inicio .contenido-seccion header .logo .color{
+    color: hwb(240 9% 5% / 0.843);
+    font-family:"Yellowtail";
+}
+/* barras CON COLOR*/
+.inicio .contenido-seccion header .nav-bar{
+    position: center;
+    background-color: hwb(320 5% 2% / 0.741);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor:pointer;
+    transition: .3s;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px hsl(0, 81%, 35%);
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 113px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenid-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenid-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+
+}
+.inicio .contenido-seccion .info l.redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
+.inicio .contenido-seccion .foto{
+    position:relative
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 280px;
+    border-radius: 50%;
+    border: 5px solid #940253;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+/*ESTILOS GENERALES*/
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+/*SECCION SOBRE MI*/
+.sobremi{
+    background-color: rgb#940253(95, 95, 95);/*inicio color de fondo*/
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenid-seccion .especial{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: hsl(210, 1%, 65%);
+
+}
+.sobremi .contenid-seccion .fila {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+.sobremi .contenid-seccion .fila .col {
+    width: 30%;
+}
+.sobremi .contenid-seccion .fila .col i{
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+ /*seccion habilidades*/
+ .habilidades{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0.3)),
+    url("foto/fondo.jpeg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+
+ }
+ .habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 140px 0 100px 0;
+
+ }
+ .habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+ }
+.habilidades ,.contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.habilidades .contenid-seccion .fila .col{
+    width: 47%;
+    text-align: left;
+
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+
+
+}
+.habilidades .contenid-seccion .barra{
+    display: flex;
+    border: 1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #3a0ff7;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+ /*seccion Resumen*/
+ .resumen{
+    background-color: #37373a;
+    padding: 140px 0 100px 0;
+    text-align: center;
+ }
+ .resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+ }
+ .resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+ }
+ .resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+ }
+ .resumen .contenido-seccion .info .col{
+    width: 45%;
+ }
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+}
+resumen .contenido-seccion .info .col table{
+    scroll-margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #afacac;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .promedio{
+display: block;
+color: #940253;
+margin-top: 10px;
+font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px ;
+}
+/*SECCION CONTACTO*/
+.contacto{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contacto-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contacto-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+color: #940253;
+}
